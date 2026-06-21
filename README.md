@@ -13,24 +13,15 @@ The structure that follow is the recommended structure to make sure the code wor
 
 Grating-research/
 ├── reflection_analysis.py
-
 ├── transmission_analysis.py
-
 ├── tmm.py
-
 ├── data/
-
-│ ├── reflection/
-
-│ └── transmission/
-
+│   ├── reflection/
+│   └── transmission/
 └── results/
-
-├── reflection/
-
-├── transmission/
-
-└── tmm/
+    ├── reflection/
+    ├── transmission/
+    └── tmm/
 
 
 
