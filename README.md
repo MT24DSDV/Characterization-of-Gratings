@@ -113,7 +113,7 @@ Supports five modes:
 ### **Example Outputs (included in repo)**
 
 ```
-data/Example/
+Example/
 ├── comparison/
 │   └── comparison_BOX1_vs_BOX2.png
 ├── cross/
@@ -122,6 +122,13 @@ data/Example/
 │   └── cross_overlay_out_in_GratingName.png
 └── full/
     └── full_spectrum_BOX1.png
+```
+And in 
+
+```
+results/
+└──  reflection/
+       └── Example/
 ```
 
 Reflection results are saved in:
