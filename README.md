@@ -1,11 +1,11 @@
-# **Gratings Characterization Toolkit**
+# **Grating Characterization Toolkit**
 
-This repository contains a set of Python tools developed during my 2026 research internship for the spectral characterization of fiber Bragg gratings (FBGs).  
+This repository contains a set of Python tools developed during my 2026 research internship for the spectral characterization of optical gratings.  
 It includes:
 
 - Reflection spectrum analysis  
 - Transmission spectrum analysis  
-- Transfer Matrix Method (TMM) simulation  
+- Transfer Matrix Method (TMM) simulation for grating modeling  
 
 The project is still evolving and may expand with additional analysis tools.
 
@@ -75,7 +75,7 @@ The scripts do **not** depend on the date format.
 
 ### About the “box” terminology
 
-In the original experiment, fibers were grouped into physical containers (“boxes”), and each OSA file contained multiple traces (A–G) corresponding to fibers in that box.
+In the original experiment, gratings were grouped into physical containers (“boxes”), and each OSA file contained multiple traces (A–G) corresponding to gratings in that box.
 
 This is **only a naming convention**.  
 You can replace it with:
@@ -104,10 +104,10 @@ Supports five modes:
 
 ### **When to use each mode**
 
-- Compare the same fiber at different OSA resolutions  
+- Compare the same grating at different OSA resolutions  
 - Compare measurements taken at different times  
 - Compare forward vs backward measurements  
-- Compare fibers from different groups  
+- Compare gratings from different groups  
 - Validate measurement repeatability  
 
 ### **Example Outputs (included in repo)**
@@ -117,9 +117,9 @@ data/Example/
 ├── comparison/
 │   └── comparison_BOX1_vs_BOX2.png
 ├── cross/
-│   ├── cross_isolated_FiberName.png
-│   ├── cross_overlay_in_out_FiberName.png
-│   └── cross_overlay_out_in_FiberName.png
+│   ├── cross_isolated_GratingName.png
+│   ├── cross_overlay_in_out_GratingName.png
+│   └── cross_overlay_out_in_GratingName.png
 └── full/
     └── full_spectrum_BOX1.png
 ```
@@ -156,13 +156,13 @@ results/transmission/Example/
 
 # **6. tmm.py**
 
-Simulates theoretical FBG spectra using the Transfer Matrix Method.
+Simulates theoretical grating spectra using the Transfer Matrix Method.
 
 ### **Features**
 
 - Reflection (linear and dB)  
 - Transmission (dB)  
-- Bragg wavelength shift vs strain  
+- Wavelength shift vs strain  
 - CSV export of spectra  
 - CSV export of peak wavelength vs strain  
 - Sensitivity calculation  
